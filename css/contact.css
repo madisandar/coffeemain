@@ -212,7 +212,7 @@
     color: #999;
   }
   .map-container{
-    margin-top: 50px;
+    margin-top: 20px;
   
     display: flex;
     align-items: center;
@@ -226,6 +226,7 @@
   }
   
   .faqs{
+    margin-top: 20px;
     width: 55%;
     margin-left: 20px;
   }

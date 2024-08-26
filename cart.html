@@ -6,26 +6,30 @@
     <title>Cart - Coffee Shop</title>
     <script src="https://kit.fontawesome.com/71aa3b06af.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+
+
 </head>
 <body>
 
-     <!-- Navbar -->
-     <nav>
-        <div class="logo"> 
-            <img src="images/logo.png" alt="logo" srcset="">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="carts">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping  cart-btn"><span id="cart-count">0</span></i></a>          
-          </div>
-    </nav>
+    <header>
+        <nav>
+            <a href="#" class="logo"> 
+                <img src="images/logo.png" alt="logo" srcset="">
+              </a>
+              <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>            
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <div class="icons">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping cart-btn"><span id="cart-count">0</span></i></a>          
+              </div>
+        </nav>
+    </header>
 
     <div class="cart-container">
         <h1>Shopping Cart</h1>
@@ -49,6 +53,12 @@
             <button id="checkout-btn">Checkout</button>
         </div>
     </div>
+
+   
+    <footer class="myfooter">
+        <p>Copyright , &copy;<span id="getyear">2024</span></span> Coffee Shop. All rights reserved.</p>
+    </footer>
+    
 
     <script src="js/cart.js"></script>
 </body>
