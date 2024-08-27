@@ -211,10 +211,10 @@ header::after {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 50px;
+  padding: 30px;
   margin-left: 9rem;
   margin-right: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .images-grid {
@@ -285,7 +285,7 @@ header::after {
 
 
 /* Our Customer Says Section */
-.customer-reviews {
+/* .customer-reviews {
   padding: 5rem 4rem;
   background-color: #f9f4ed;
 }
@@ -348,9 +348,85 @@ header::after {
 #year{
   font-size: 17px;
   color: burlywood;
+} */
+
+
+.feedback-container{
+  width: 80%;
+  margin: auto;
+
+  margin-top: 90px;
+}
+
+.row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 
+.col-2 p{
+   font-size: 15px;
+   font-weight: bold;
+}
+.rows{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lefts{
+  width: 20%;
+  margin-bottom: 10px;
+
+  z-index: 1;
+}
+
+.middles{
+  width: 60%;
+  margin-bottom: 10px; 
+} 
+
+.rights{
+  width: 20%;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.bars-container{
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.bars-1{
+  width: 80%;
+  height: 18px;
+  background-color: green;
+}
+
+.bars-2{
+  width: 70%;
+  height: 18px;
+  background-color: blue;
+}
+
+.bars-3{
+  width: 50%;
+  height: 18px;
+  background-color: skyblue;
+}
+
+.bars-4{
+  width: 65%;
+  height: 18px;
+  background-color: orange;
+}
+
+.bars-5{
+  width: 25%;
+  height: 18px;
+  background-color: red;
+}
 /* Animations */
 @keyframes fadeIn {
   from {
