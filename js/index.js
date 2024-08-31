@@ -88,3 +88,30 @@ function generatePopularProductCards(data) {
     chart.draw(data, options);
 
 }
+const scrollBtn = document.getElementById('scrollBtn');
+
+scrollBtn.addEventListener('click', function() {
+    if (scrollBtn.textContent === '▼') {
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    } else {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+});
+
+window.addEventListener('scroll', function() {
+    const footer = document.querySelector('.footer');
+    const footerOffset = footer.offsetTop;
+    const scrollPos = window.scrollY + window.innerHeight;
+
+    if (scrollPos >= footerOffset) {
+        scrollBtn.innerHTML = '&#9650;'; // Change to up arrow
+    } else {
+        scrollBtn.innerHTML = '&#9660;'; // Change to down arrow
+    }
+});

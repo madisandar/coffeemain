@@ -238,7 +238,7 @@ body {
 .member-info p {
   font-size: 1.2rem;
   color: #777;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .member-info .social-icons {
@@ -257,7 +257,7 @@ body {
   color: #ffd700;
 }
 
-.footer::after {
+/* .footer::after {
   margin-top: -350px;
-}
+} */
 
