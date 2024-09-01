@@ -155,16 +155,16 @@ async function displayCartItems() {
 
               const row = document.createElement('tr');
               row.innerHTML = `
-                  <td><img src="${item.image}" alt="${item.name}" style="width: 50px; height: auto;"></td>        
+                  <td><img src="${item.image}" alt="${item.name}" style="width: 150px; height: auto;"></td>        
                   <td>$${(item.price).toFixed(2)}</td>
                   
                   <td>
-                      <button class="decrease-quantity" data-id="${item.id}">-</button>
-                      <span class="quantity">${itemId.quantity}</span>
-                      <button class="increase-quantity" data-id="${item.id}">+</button>
+                      <button class="decrease-quantity" data-id="${item.id}" style='padding:5px 10px; background-color:orange; border:none; cursor:pointer; transform:scale(1.2);'>-</button>
+                      <span class="quantity" style="font-size:16px; font-weight:bold; margin:0 3px;">${itemId.quantity}</span>
+                      <button class="increase-quantity" data-id="${item.id}" style='padding:5px 10px; background-color:orange; border:none; cursor:pointer; transform:scale(1.2);'>+</button>
                   </td>
                   <td>$${(itemId.quantity * item.price).toFixed(2)}</td>
-                  <td><button class="remove-item" data-id="${item.id}">Remove</button></td>
+                  <td><button class="remove-item" data-id="${item.id}" style='padding:6px;font-size:13px;background-color:red; color:#fff;border:none;cursor:pointer;'>Remove</button></td>
               `;
               cartTableBody.appendChild(row);
           });
@@ -225,7 +225,7 @@ async function handleQuantityChange(event) {
 }
 
 function handleCheckout() {
-  alert('Checkout successful! Thank you for your purchase.');
+  alert(`Checkout successful! Thank you for your purchase.`);
   // Optionally, clear the cart after a successful checkout
   localStorage.removeItem('cartItems');
   displayCartItems();
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (event.target.id === 'checkout-btn') {
         let text;
-        if (confirm("Are you sure you buy this") == true) {
+        if (confirm("Are you sure to buy?") == true) {
           handleCheckout();
         } 
         

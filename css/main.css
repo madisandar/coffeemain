@@ -107,6 +107,14 @@ nav .logo img {
   align-items: center;
 }
 
+#cart-summary{
+  font-weight: bold;
+}
+
+#cart-total{
+  font-size: 22px;
+}
+
 section {
   padding: 3rem 1.5rem;
 }

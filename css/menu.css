@@ -73,24 +73,40 @@ nav .logo img {
   cursor: pointer;
 }
 
-.cart-btn #cart-count,.menu-cart-btn #menu-cart-count{
+.cart-btn #cart-count{
   display :block;
   width: 25px;
   height: 25px;
   background-color: orange;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 12px;
 
 
   position: absolute;
-  left: 25px;
-  top: -20px;
+  left: 27px;
+  top: -22px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.menu-cart-btn #cart-count{
+  display :block;
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50%;
+  font-size: 12px;
 
+
+  position: absolute;
+  left: 27px;
+  top: -22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 section {
   padding: 3rem 1.5rem;
@@ -613,7 +629,7 @@ section {
 
 
 .footer::after {
-  margin-top: -370px;
+  margin-top: -200px;
   /* background: linear-gradient(rgba(60, 42, 33, 0.5), rgba(60, 42, 33, 0.5)); */
 
 }

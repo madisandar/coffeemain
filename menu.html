@@ -6,7 +6,6 @@
     <title>Coffee Shop</title>
     <script src="https://kit.fontawesome.com/71aa3b06af.js" crossorigin="anonymous"></script>
 
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
 
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css" />
@@ -29,7 +28,7 @@
                   <li><a href="contact.html">Contact</a></li>
               </ul>
               <div class="menu-icons">
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping cart-btn"><span id="cart-count">0</span></i></a>          
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping menu-cart-btn"><span id="cart-count">0</span></i></a>          
               </div>
         </nav>
     </header>
@@ -98,10 +97,10 @@
                 <h4>FOLLOW US</h4>
                 <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                 <div class="social-icons">
-                    <a href="#javascript:void(0);"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#javascript:void(0);"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#javascript:void(0);"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://m.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://mm.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://mail.google.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-column">
@@ -112,27 +111,32 @@
             <div class="footer-column">
               <h4>INSTAGRAM</h4>
               <div class="instagram">
-                <img src="./images/instagram/pose1.jpeg" />
-                <img src="./images/instagram/pose2.jpeg" />
-                <img src="./images/instagram/pose3.jpeg" />
-                <img src="./images/instagram/pose4.jpeg" />
-                <img src="./images/instagram/pose5.jpeg" />
-                <img src="./images/instagram/pose6.jpeg" />
+                <img src="./images/instagram/pose1.jpeg" class="instagramImage"/>
+                <img src="./images/instagram/pose2.jpeg" class="instagramImage"/>
+                <img src="./images/instagram/pose3.jpeg" class="instagramImage" />
+                <img src="./images/instagram/pose4.jpeg" class="instagramImage" />
+                <img src="./images/instagram/pose5.jpeg" class="instagramImage" />
+                <img src="./images/instagram/pose6.jpeg" class="instagramImage" />
               </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Copyright © <span id="year">2024</span> <span class="domain-name">https://www.CoffeeTime</span>. All Rights Reserved.</p>
+            <p>Copyright © <span id="year">2024</span> <span class="domain-name">www.ourcoffeetime.vercel.app</span>. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="js/cart.js"></script>
-    <script src="js/index.js"></script>
     <script type="module" src="js/pagination.js"></script>
     <script type="module" src="js/menu.js"></script>
     <script type="module" src="js/filter.js"></script>
     <script type="text/javascript">
-        document.getElementById('getyear').innerHTML = new Date().getFullYear();
+       
+        const getinstagramimgs = document.querySelectorAll('.instagramImage');
+        getinstagramimgs.forEach(function(instagramimg){
+            instagramimg.addEventListener('click', function() {
+                window.open('https://www.instagram.com', '_blank');
+            });
+        })
     </script>
     
 </body>

@@ -115,3 +115,11 @@ window.addEventListener('scroll', function() {
         scrollBtn.innerHTML = '&#9660;'; // Change to down arrow
     }
 });
+
+
+const getinstagramimgs = document.querySelectorAll('.instagramImage');
+getinstagramimgs.forEach(function(instagramimg){
+    instagramimg.addEventListener('click', function() {
+        window.open('https://www.instagram.com', '_blank');
+    });
+})
